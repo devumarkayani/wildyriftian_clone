@@ -1,0 +1,19 @@
+@import "tailwindcss";
+/* Ensure these keyframes are in your main global CSS file, 
+   like src/index.css or src/globals.css */
+
+@keyframes marquee {
+  /* Start position */
+  from {
+    transform: translateX(100%);
+  }
+  /* End position (Adjust to -100% of CONTENT width for smooth loop) */
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  /* 20s for speed, linear for constant movement, infinite loop */
+  animation: marquee 20s linear infinite;
+}
