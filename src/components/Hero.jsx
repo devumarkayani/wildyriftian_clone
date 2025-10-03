@@ -186,3 +186,54 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+
+// import React from 'react';
+// import { motion } from 'framer-motion';
+
+// const Hero = () => {
+//   return (
+//     <section id="hero" className="min-h-screen flex flex-col items-center justify-center text-center px-4 bg-cream paper-texture">
+//       <motion.h1
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1 }}
+//         className="text-6xl md:text-8xl font-serif uppercase text-gray-900 mb-8"
+//       >
+//         Wildy Riftian
+//       </motion.h1>
+//       <motion.p
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1, delay: 0.2 }}
+//         className="text-xl md:text-2xl text-gray-600 mb-4"
+//       >
+//         A COLLECTION OF VISUAL WORKS
+//       </motion.p>
+//       <motion.p
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1, delay: 0.4 }}
+//         className="text-2xl md:text-3xl font-bold text-gray-900 mb-12"
+//       >
+//         WILDY RIFTIAN 2025
+//       </motion.p>
+//       <motion.div
+//         initial={{ opacity: 0, y: 50 }}
+//         animate={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1, delay: 0.6 }}
+//         className="text-4xl cursor-pointer hover:animate-bounce"
+//         onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+//       >
+//         SCROLL TO EXPLORE ↓
+//       </motion.div>
+//     </section>
+//   );
+// };
+
+// export default Hero;

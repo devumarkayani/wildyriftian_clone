@@ -1,214 +1,3 @@
-// import React from 'react';
-
-// const FeaturedWork = () => {
-//   return (
-//     <div className="max-w-8xl    lg: bg-gray-400">
-//       <div className="flex  lg:flex-row  ">
-//         {/* Feature Work  Section */}
-//         <div className="flex lg: w-68 lg: bg-white   border-amber-100 rounded-tl-xl rounded-tr-1xl ">
-//           <h1 className="text-xl lg:text-1xl font-normal  uppercase text-gray-900 p-1">
-//             FEATURED WORK
-//             <span className=" text-gray-900"> 01</span>
-//           </h1>
-//         </div>
-//         <div className=" flex     w-17    border-amber-100 rounded-tr-xl   bg-white [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] "></div>
-
-//         <div className="flex    lg: w-50  ml-155 lg: bg-black   border-amber-100 rounded-tl-xl rounded-tr-1xl  ">
-//           <h1 className="text-xl lg:text-1xl font-normal  uppercase text-white p-1   ml-2 group-hover:translate-x-1 transition-transform duration-300">
-//             SEE ALL WORKS
-//             <span className="  "> →</span>
-//           </h1>
-//         </div>
-//         <div className=" flex     w-10    border-amber-100 rounded-tr-xl   bg-black [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] "></div>
-//       </div>
-
-//       {/* Content Section */}
-//       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white  border-b-1 border-dotted ">
-
-//         <div className="lg:col-span-2 space-y-6 ">
-//           <h2 className="text-1xl sm:text-3xl lg:text-5xl  text-gray-900 leading-tight">
-//             Into the Abyss: 3D Character & Environment Animation
-//           </h2>
-
-//           {/*  */}
-
-//           {/* <a
-//             href="#"
-//             className="group inline-flex items-center text-lg lg:text-xl font-semibold text-gray-900 border-b-2 border-gray-900 pb-2 hover:pb-3 transition-all duration-300"
-//           >
-//             VIEW PROJECT
-//             <span className="ml-3 group-hover:ml-4 transition-all duration-300">→</span>
-//           </a> */}
-//         </div>
-
-//         {/* Project Meta */}
-//         <div className="lg:space-y-8">
-//           {/* Year */}
-//           <div className=" lg:text-1xl  text-gray-900">
-//             2025
-//             <br />
-//             <span>3D Tech Works</span>
-//             <div className="bg-gray-600 text-white    overflow-hidden m-2 ">
-//               <div className="inline-block whitespace-nowrap animate-marquee">
-//                 3D text molding and the movien
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//        {/* Project Info */}
-//         <div className=" m-1 bg-white">
-
-//       <div className="grid lg:grid-cols-3 gap-2">
-//         <div className="">
-//          <p className=" lg:text-1xl text-gray-800 leading-relaxed lg:leading-relaxed max-w-4xl">
-//               DEVELOPED A 3D ANIMATED CHARACTER AND ENVIRONMENT WITH A DEEP-SEA DIVER THEME,
-//               EXECUTING THE FULL 3D ANIMATION PIPELINE, INCLUDING CONCEPT DEVELOPMENT,
-//               MODELING, TEXTURING, RIGGING, AND ANIMATION.
-//             </p>
-//             <a
-//             href="#"
-//             className="group inline-flex items-center text-lg lg:text-1xl font-semibold text-gray-900 pt-4 pb-3 hover:pb-3 transition-all duration-300"
-//           >
-//             VIEW PROJECT
-//             <span className="ml-3 group-hover:ml-4 transition-all duration-300">→</span>
-//           </a>
-//         </div>
-//         <div className="  col-span-1 w-120">
-//           <img src="https://framerusercontent.com/images/vJevA68OesjWu0fNiTpOQlSPHE.webp?scale-down-to=1024&width=2000&height=1504"/>
-
-//         </div>
-//         <div className=" col-span-1 ml-25"><img src="https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563 1000w" alt="" />
-//         <img src="https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563 1000w" alt=""  /></div>
-//       </div>
-//     </div>
-//     </div>
-//   );
-// };
-
-// export default FeaturedWork;
-
-// import React from "react";
-
-// const FeaturedWork = ({
-//   // Background colors
-//   topBgColor = "bg-gray-400",
-//   contentBgColor = "bg-white",
-//   featuredTabBg = "bg-white",
-//   featuredTextColor = "text-gray-900",
-//   seeAllTabBg = "bg-black",
-//   seeAllTextColor = "text-white",
-
-//   // Content data
-//   featuredWorkText = "FEATURED WORK",
-//   featuredNumber = "01",
-//   seeAllText = "SEE ALL WORKS",
-//   titleText = "Into the Abyss: 3D Character & Environment Animation",
-//   yearText = "2025",
-//   companyText = "3D Tech Works",
-//   marqueeContent = "3D text molding and the movien",
-//   descriptionText = "DEVELOPED A 3D ANIMATED CHARACTER AND ENVIRONMENT WITH A DEEP-SEA DIVER THEME, EXECUTING THE FULL 3D ANIMATION PIPELINE, INCLUDING CONCEPT DEVELOPMENT, MODELING, TEXTURING, RIGGING, AND ANIMATION.",
-//   viewProjectText = "VIEW PROJECT",
-
-//   // Images
-//   mainImageUrl = "https://framerusercontent.com/images/vJevA68OesjWu0fNiTpOQlSPHE.webp?scale-down-to=1024&width=2000&height=1504",
-//   gifImageUrl1 = "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
-//   gifImageUrl2 = "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
-
-//   // Links
-//   projectLink = "#",
-// }) => {
-//   return (
-//     <div className={`max-w-8xl    lg: ${topBgColor}`}>
-//       <div className="flex  lg:flex-row  ">
-//         {/* Feature Work  Section */}
-//         <div
-//           className={`flex lg: w-68 lg: ${featuredTabBg}   border-amber-100 rounded-tl-xl rounded-tr-1xl `}
-//         >
-//           <h1
-//             className={`text-xl lg:text-1xl font-normal  uppercase ${featuredTextColor} p-1`}
-//           >
-//             {featuredWorkText}
-//             <span className={featuredTextColor}> {featuredNumber}</span>
-//           </h1>
-//         </div>
-//         <div
-//           className={` flex     w-17    border-amber-100 rounded-tr-xl   ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] `}
-//         ></div>
-
-//         <div
-//           className={`flex    lg: w-50  ml-155 lg: ${seeAllTabBg}   border-amber-100 rounded-tl-xl rounded-tr-1xl  `}
-//         >
-//           <h1
-//             className={`text-xl lg:text-1xl font-normal  uppercase ${seeAllTextColor} p-1   ml-2 group-hover:translate-x-1 transition-transform duration-300`}
-//           >
-//             {seeAllText}
-//             <span className="  "> →</span>
-//           </h1>
-//         </div>
-//         <div
-//           className={` flex     w-10    border-amber-100 rounded-tr-xl   ${seeAllTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)] `}
-//         ></div>
-//       </div>
-
-//       {/* Content Section */}
-//       <div
-//         className={`grid grid-cols-1 lg:grid-cols-3 gap-12 ${contentBgColor}  border-b-1 border-dotted `}
-//       >
-//         <div className="lg:col-span-2 space-y-6 ">
-//           <h2 className="text-1xl sm:text-3xl lg:text-5xl  text-gray-900 leading-tight">
-//             {titleText}
-//           </h2>
-//         </div>
-
-//         {/* Project Meta */}
-//         <div className="lg:space-y-8">
-//           <div className=" lg:text-1xl  text-gray-900">
-//             {yearText}
-//             <br />
-//             <span>{companyText}</span>
-//             <div className="bg-gray-600 text-white    overflow-hidden m-2 ">
-//               <div className="inline-block whitespace-nowrap animate-marquee">
-//                 {marqueeContent}
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Project Info */}
-//       <div className={` m-1 ${contentBgColor}`}>
-//         <div className="grid lg:grid-cols-3 gap-2">
-//           <div className="">
-//             <p className=" lg:text-1xl text-gray-800 leading-relaxed lg:leading-relaxed max-w-4xl">
-//               {descriptionText}
-//             </p>
-//             <a
-//               href={projectLink}
-//               className="group inline-flex items-center text-lg lg:text-1xl font-semibold text-gray-900 pt-4 pb-3 hover:pb-3 transition-all duration-300"
-//             >
-//               {viewProjectText}
-//               <span className="ml-3 group-hover:ml-4 transition-all duration-300">
-//                 →
-//               </span>
-//             </a>
-//           </div>
-//           <div className="  col-span-1 w-120">
-//             <img src={mainImageUrl} />
-//           </div>
-//           <div className=" col-span-1 ml-25">
-//             <img src={gifImageUrl1} alt="" />
-//             <img src={gifImageUrl2} alt="" />
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default FeaturedWork;
-
-
 import React from 'react';
 
 const FeaturedWork = ({
@@ -221,83 +10,86 @@ const FeaturedWork = ({
   featuredWorkText = "FEATURED WORK",
   featuredNumber = "01",
   seeAllText = "SEE ALL WORKS",
-  titleText = "Into the Abyss: 3D Character & Environment Animation",
-  yearText = "2025",
-  companyText = "3D Tech Works",
-  marqueeContent = "3D text molding and the movien",
-  descriptionText = "DEVELOPED A 3D ANIMATED CHARACTER AND ENVIRONMENT WITH A DEEP-SEA DIVER THEME, EXECUTING THE FULL 3D ANIMATION PIPELINE, INCLUDING CONCEPT DEVELOPMENT, MODELING, TEXTURING, RIGGING, AND ANIMATION.",
+  titleText,
+  yearText,
+  companyText,
+  marqueeContent,
+  descriptionText,
   viewProjectText = "VIEW PROJECT",
-  mainImageUrl = "https://framerusercontent.com/images/vJevA68OesjWu0fNiTpOQlSPHE.webp?scale-down-to=1024&width=2000&height=1504",
-  gifImageUrl1 = "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
-  gifImageUrl2 = "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
+  mainImageUrl,
+  gifImageUrl1,
+  gifImageUrl2,
+  showSeeAll,
   projectLink = "#",
-  featureMargin="ml-0"
+  featureMargin = "ml-0",
+  additionalClass = ""
 }) => {
   return (
-    <div className={`max-w-8xl lg: ${topBgColor}  ` }>
-      <div className={`flex lg:flex-row  ${featureMargin}`}>
+    <div className={`w-full  ${topBgColor} ${additionalClass}`}>
+      <div className={`flex flex-col lg: h-[3rem] sm:flex-row ${featureMargin}`}>
         {/* Feature Work Section */}
-        <div className={`flex lg: w-68  lg: ${featuredTabBg} border-amber-100 rounded-tl-xl rounded-tr-1xl`}>
-          <h1 className={`text-xl lg:text-1xl font-normal uppercase ${featuredTextColor} p-1`}>
+        <div className={`lg:w-[15rem]   sm:w-auto ${featuredTabBg} border border-transparent rounded-tl-xl rounded-tr-xl sm:rounded-tr-none p-4`}>
+          <h1 className={`text-[0.8rem] font-semibold uppercase  ${featuredTextColor}`}>
             {featuredWorkText}
             <span className={featuredTextColor}> {featuredNumber}</span>
           </h1>
         </div>
-        <div className={`flex  w-17 border-amber-100 rounded-tr-xl ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div>
-
-        <div className={`flex lg: w-50 ml-155 lg: ${seeAllTabBg} border-amber-100 rounded-tl-xl rounded-tr-1xl`}>
-          <h1 className={`text-xl lg:text-1xl font-normal uppercase ${seeAllTextColor} p-1 ml-2 group-hover:translate-x-1 transition-transform duration-300`}>
+        <div className={`w-[3rem] h-4 sm:h-auto pr-3 border border-transparent   ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div>
+          {showSeeAll && (<><div className={` w-full sm:w-auto ${seeAllTabBg} border-black  rounded-tl-xl rounded-tr-0xl sm:rounded-tl-xl p-4  lg:w-[20rem]  ml-[33rem]  `}>
+          <h1 className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 ` }>
             {seeAllText}
-            <span> →</span>
+            <span className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 ` } > →</span>
           </h1>
         </div>
-        <div className={`flex  w-10 border-amber-100 rounded-tr-xl ${seeAllTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div>
+       <div className={`w-[6rem] h-4 sm:h-auto    border border-black   ${seeAllTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div></>)}
+        
       </div>
 
+
+
+      
       {/* Content Section */}
-      <div className={`grid grid-cols-1 lg:grid-cols-3 pl-5 gap-12 ${contentBgColor} border-b-1 border-dotted`}>
-        <div className="lg:col-span-2 space-y-6">
-          <h2 className="text-1xl sm:text-3xl lg:text-5xl text-gray-900 leading-tight">
+      <div className={`grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 sm:p-5 ${contentBgColor} border-b border-dotted border-gray-900`}>
+        <div className="lg:col-span-2 space-y-4">
+          <h2 className="text-[2rem] sm:text-3xl lg:text-[3rem] text-gray-900 leading-tight font-serif">
             {titleText}
           </h2>
         </div>
-
         {/* Project Meta */}
-        <div className="lg:space-y-8 ">
-          <div className="lg:text-1xl  text-gray-900">
+        <div className="space-y-4">
+          <div className="text-[1rem] text-gray-900">
             {yearText}
             <br />
-            <span>{companyText}</span>
-            <div className="bg-gray-600 text-white overflow-hidden m-2">
-              <div className="inline-block whitespace-nowrap animate-marquee">
+            <span className="font-medium">{companyText}</span>
+            <div className="bg-gray-300 text-gray-800 overflow-hidden m-2 w-full">
+              <div className="inline-block whitespace-nowrap animate-marquee text-sm">
                 {marqueeContent}
               </div>
             </div>
           </div>
         </div>
       </div>
-
       {/* Project Info */}
-      <div className={`m-1 ${contentBgColor} pl-6`}>
-        <div className="grid lg:grid-cols-3 gap-2">
-          <div className="">
-            <p className="lg:text-1xl text-gray-800 leading-relaxed lg:leading-relaxed max-w-4xl">
-              {descriptionText}
+      <div className={`p-1 sm:p-4 ${contentBgColor}`}>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="lg:col-span-1 order-3 lg:order-1 m-4">
+            <p className="text-[0.5rem] lg:text-[0.8rem] font-serif text-gray-700 leading-relaxed  w-[20rem] ">
+              {descriptionText.toUpperCase()}
             </p>
-            <a 
-              href={projectLink} 
-              className="group inline-flex items-center text-lg lg:text-1xl font-semibold text-gray-900 pt-4 pb-3 hover:pb-3 transition-all duration-300"
+            <a
+              href={projectLink}
+              className="group inline-flex items-center text-[0.8rem] font-semibold text-gray-900 pt-4 pb-2  hover:pb-3 transition-all duration-400"
             >
               {viewProjectText}
               <span className="ml-3 group-hover:ml-4 transition-all duration-300">→</span>
             </a>
           </div>
-          <div className="col-span-1 w-120"> 
-            <img src={mainImageUrl} alt="Main project" />
+          <div className="col-span-1 col-start-1 row-span-1 lg:col-span-1 order-1">
+            <img src={mainImageUrl} alt={titleText} className="w-full h-auto rounded-lg" />
           </div>
-          <div className="col-span-1 ml-25">
-            <img src={gifImageUrl1} alt="Project GIF 1" />
-            <img src={gifImageUrl2} alt="Project GIF 2" />
+          <div className="col-span-1 order-2 flex flex-col space-y-2">
+            <img src={gifImageUrl1} alt={`${titleText} GIF 1`} className="w-full h-32 sm:h-48 object-cover rounded" />
+            <img src={gifImageUrl2} alt={`${titleText} GIF 2`} className="w-full h-32 sm:h-48 object-cover rounded" />
           </div>
         </div>
       </div>
