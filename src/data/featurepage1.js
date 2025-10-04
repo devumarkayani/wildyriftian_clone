@@ -19,8 +19,9 @@ export const featuredWork1 = {
   gifImageUrl1: "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
   gifImageUrl2: "https://framerusercontent.com/images/XMOCKfKI61qBMf2PeQ1Q4lL8.gif?width=1000&height=563",
   projectLink: "#",
-  featureMargin:"ml-0",
-  showSeeAll:true
+  featureMargin:"mr-0",
+  showSeeAll:true,
+  isFirst : true,
 };
 export const featuredWork2 = {
   topBgColor: 'none',
@@ -42,8 +43,33 @@ export const featuredWork2 = {
   gifImageUrl1: "https://framerusercontent.com/images/d8chFLE3YfISepkFPOGqot7so.jpg?scale-down-to=512&width=1400&height=800",
   gifImageUrl2: "https://framerusercontent.com/images/d8chFLE3YfISepkFPOGqot7so.jpg?scale-down-to=512&width=1400&height=800",
   projectLink: "#",
-  featureMargin:"ml-[15rem]",
+  featureMargin:"ml-[14rem]",
   showSeeAll:false,
+  isFirst : false,
+};
+export const featuredWork4 = {
+  topBgColor: 'none',
+  contentBgColor: "bg-blue-400",
+  featuredTabBg: "bg-blue-400 ",
+  featuredTextColor: "text-gray-900",
+  seeAllTabBg: "bg-black",
+  seeAllTextColor: "text-white",
+  featuredWorkText: "FEATURED WORK",
+  featuredNumber: "02",
+  seeAllText: "SEE ALL WORKS",
+  titleText: "Autumn Things",
+  yearText: "2024",
+  companyText: " Motion Works",
+  marqueeContent: "3D Modeling, 3D Texturing, 3D Rendering, Motion Graphic, Motion Poster ",
+  descriptionText: "A project focused on recreating a painterly faux 2D oil painting effect in 3D using hand-painted textures, UV mapping, and rendering techniques.",
+  viewProjectText: "VIEW PROJECT",
+  mainImageUrl: "https://framerusercontent.com/images/835kXNagGwY5KtJiuQ7RGIUtU0.webp?scale-down-to=1024&width=2000&height=1504 ",
+  gifImageUrl1: "https://framerusercontent.com/images/d8chFLE3YfISepkFPOGqot7so.jpg?scale-down-to=512&width=1400&height=800",
+  gifImageUrl2: "https://framerusercontent.com/images/d8chFLE3YfISepkFPOGqot7so.jpg?scale-down-to=512&width=1400&height=800",
+  projectLink: "#",
+  featureMargin:"ml-[50rem]",
+  showSeeAll:false,
+  isFirst:false,
 };
 export const featuredWork3 = {
   topBgColor: "none",
@@ -66,7 +92,8 @@ export const featuredWork3 = {
   gifImageUrl2: "https://framerusercontent.com/images/c5pAVd8J1dpPoA9R3frSnog6k4.jpg?scale-down-to=512&width=2000&height=1125",
   projectLink: "#",
   featureMargin:"ml-[32rem]",
-  showSeeAll:false
+  showSeeAll:false,
+  isFirst : false,
 };
 
 

@@ -1,4 +1,5 @@
-import React from 'react';
+import { i } from "framer-motion/client";
+import React from "react";
 
 const FeaturedWork = ({
   topBgColor = "bg-gray-400",
@@ -22,34 +23,62 @@ const FeaturedWork = ({
   showSeeAll,
   projectLink = "#",
   featureMargin = "ml-0",
-  additionalClass = ""
+  additionalClass = "",
+  isFirst = false
 }) => {
   return (
     <div className={`w-full  ${topBgColor} ${additionalClass}`}>
-      <div className={`flex flex-col lg: h-[3rem] sm:flex-row ${featureMargin}`}>
+      <div
+        className={`flex flex-col lg: h-[3rem] flex-row sm:flex-row ${featureMargin}`}
+      >
         {/* Feature Work Section */}
-        <div className={`lg:w-[15rem]   sm:w-auto ${featuredTabBg} border border-transparent rounded-tl-xl rounded-tr-xl sm:rounded-tr-none p-4`}>
-          <h1 className={`text-[0.8rem] font-semibold uppercase  ${featuredTextColor}`}>
+        {!isFirst && (<>
+        
+        
+        <div
+              className={`lg:  w-[4rem] h-auto sm:h-auto border  border-transparent  ${featuredTabBg} [clip-path:polygon(25%_0%,100%_0,100%_100%)]`}
+            ></div>
+        
+        </>)}
+        <div
+          className={`lg:w-[15rem]   sm:w-auto ${featuredTabBg} border border-transparent  sm:rounded-tr-none p-4`}
+        >
+          <h1
+            className={`text-[0.8rem] font-semibold uppercase  ${featuredTextColor}`}
+          >
             {featuredWorkText}
             <span className={featuredTextColor}> {featuredNumber}</span>
           </h1>
         </div>
-        <div className={`w-[3rem] h-4 sm:h-auto pr-3 border border-transparent   ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div>
-          {showSeeAll && (<><div className={` w-full sm:w-auto ${seeAllTabBg} border-black  rounded-tl-xl rounded-tr-0xl sm:rounded-tl-xl p-4  lg:w-[20rem]  ml-[33rem]  `}>
-          <h1 className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 ` }>
-            {seeAllText}
-            <span className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 ` } > →</span>
-          </h1>
-        </div>
-       <div className={`w-[6rem] h-4 sm:h-auto    border border-black   ${seeAllTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}></div></>)}
-        
+        <div
+          className={`w-[3rem]  h-4 sm:h-auto pr-4 border border-transparent   ${featuredTabBg} [clip-path:polygon(0_20%,0_0,100%_100%,0_100%)]`}
+        ></div>
+        {showSeeAll && (
+          <>
+            <div
+              className={`lg: float-end  ml-[48rem] w-[6rem] h-4 sm:h-auto border border-black ${seeAllTabBg} [clip-path:polygon(50%_0%,100%_0,100%_100%)]`}
+            ></div>
+            <div className={`sm:w-auto ${seeAllTabBg}  p-4  lg:w-[12.5rem]  `}>
+              <h1
+                className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 `}
+              >
+                {seeAllText}
+                <span
+                  className={`text-[0.8rem] font-semibold uppercase ${seeAllTextColor} cursor-pointer hover:translate-x-1 transition-transform duration-300 `}
+                >
+                  {" "}
+                  →
+                </span>
+              </h1>
+            </div>
+          </>
+        )}
       </div>
 
-
-
-      
       {/* Content Section */}
-      <div className={`grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 sm:p-5 ${contentBgColor} border-b border-dotted border-gray-900`}>
+      <div
+        className={`grid grid-cols-1 lg:grid-cols-3 gap-4 p-4 sm:p-5 ${contentBgColor} border-b border-dotted border-gray-900`}
+      >
         <div className="lg:col-span-2 space-y-4">
           <h2 className="text-[2rem] sm:text-3xl lg:text-[3rem] text-gray-900 leading-tight font-serif">
             {titleText}
@@ -81,15 +110,29 @@ const FeaturedWork = ({
               className="group inline-flex items-center text-[0.8rem] font-semibold text-gray-900 pt-4 pb-2  hover:pb-3 transition-all duration-400"
             >
               {viewProjectText}
-              <span className="ml-3 group-hover:ml-4 transition-all duration-300">→</span>
+              <span className="ml-3 group-hover:ml-4 transition-all duration-300">
+                →
+              </span>
             </a>
           </div>
           <div className="col-span-1 col-start-1 row-span-1 lg:col-span-1 order-1">
-            <img src={mainImageUrl} alt={titleText} className="w-full h-auto rounded-lg" />
+            <img
+              src={mainImageUrl}
+              alt={titleText}
+              className="w-full h-auto rounded-lg"
+            />
           </div>
           <div className="col-span-1 order-2 flex flex-col space-y-2">
-            <img src={gifImageUrl1} alt={`${titleText} GIF 1`} className="w-full h-32 sm:h-48 object-cover rounded" />
-            <img src={gifImageUrl2} alt={`${titleText} GIF 2`} className="w-full h-32 sm:h-48 object-cover rounded" />
+            <img
+              src={gifImageUrl1}
+              alt={`${titleText} GIF 1`}
+              className="w-full h-32 sm:h-48 object-cover rounded"
+            />
+            <img
+              src={gifImageUrl2}
+              alt={`${titleText} GIF 2`}
+              className="w-full h-32 sm:h-48 object-cover rounded"
+            />
           </div>
         </div>
       </div>
